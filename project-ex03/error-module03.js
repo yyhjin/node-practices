@@ -1,7 +1,6 @@
 /**
- * module.exports와 exports를 혼용해서 사용하지 않았기 때문에
- * 선언된 변수 모두 사용 가능함
- * 만약 혼용해서 사용한다면 에러 날 가능성이 높음
+ * module.exports와 exports를 혼용해서 사용했기 때문에 에러
+ * 전부 module.exports만 사용했다면 에러 안날것
  */
 
 module.exports = {
@@ -10,5 +9,5 @@ module.exports = {
     o: {},
 };
 
-module.exports.b = false;
-module.exports.f = function () {};
+exports.b = false;
+exports.f = function () {};
